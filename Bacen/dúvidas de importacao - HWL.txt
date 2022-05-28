@@ -1,0 +1,19 @@
+
+
+Status do House
+
+1	OK	1
+2	House Maior	2
+3	House Menor	2
+4	CC/CC	2
+5	Outras Depesas	1
+6	EXP	2
+
+
+-- Importação 
+1. Qual a ordem de exibição
+2. Filtros de 
+     - Divergêndia de valor
+     - HAWB / BL No
+     - M AWB / BL No
+

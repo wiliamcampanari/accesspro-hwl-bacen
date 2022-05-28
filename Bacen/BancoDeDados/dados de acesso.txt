@@ -1,0 +1,13 @@
+
+Super Usuário
+Usuário: weg.corp.2021
+Senha: W&G.C0r9.2021-d0m!n4r
+
+Banco de dados HLM
+
+mssql-19185-0.cloudclusters.net
+Port: 19200
+IP Address: 204.2.195.89
+
+
+

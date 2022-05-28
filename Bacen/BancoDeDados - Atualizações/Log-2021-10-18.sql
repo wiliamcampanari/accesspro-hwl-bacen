@@ -1,0 +1,28 @@
+/****** Object:  Table [dbo].[Log]    Script Date: 16/10/2021 12:14:43 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Log](
+	[IDLog] [int] IDENTITY(1,1) NOT NULL,
+	[IDTipoLog] [int] NULL,
+	[DataLog] [datetime] NULL,
+	[Usuario] [nvarchar](50) NULL,
+	[Detalhes] [nvarchar](max) NULL,
+ CONSTRAINT [PK_Log] PRIMARY KEY CLUSTERED 
+(
+	[IDLog] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Log]  WITH CHECK ADD  CONSTRAINT [FK_Log_Tab_TipoLog] FOREIGN KEY([IDTipoLog])
+REFERENCES [dbo].[Tab_TipoLog] ([IDTipoLog])
+GO
+
+ALTER TABLE [dbo].[Log] CHECK CONSTRAINT [FK_Log_Tab_TipoLog]
+GO
+
+
